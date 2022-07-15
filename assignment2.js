@@ -1,5 +1,5 @@
 
-var kiosk=[
+var prices=[
     {
     name :"Orange",
     price : 30,
@@ -13,22 +13,20 @@ var kiosk=[
     price : 10,
     }]
     function getTotalCost(name,quantity){
-    let m=kiosk.find(item=>item.name===name)
+    let m=prices.find(item=>item.name===name)
     console.log(`${quantity} ${name} for KES ${m.price*quantity}`)
     }
     getTotalCost("Apple",2)
     
-    class KioskCalc {
+    class KioskPrices {
     constructor(fruit, quantity){
     this.fruit = fruit
     this.quantity = quantity
     this.fruitPriceList = {"Orange": 30, "Mango": 40, "Avocado": 20 };
     this.getTotalCost = function () {
-    return ` ${quantity} ${fruit} for KES ${quantity * this.price}`
+    return ` ${quantity} ${fruit} for KES ${quantity * this.fruitPriceList[fruit]}`
     }
     }
     }
-    KioskCalc.prototype.price = 30;
-    
-    var kiosk = new KioskCalc('Mango', 2);
+    var kiosk = new KioskPrices('Avocado', 2);
     console.log(kiosk.getTotalCost());
