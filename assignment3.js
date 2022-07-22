@@ -51,12 +51,12 @@ class Mkulima{
     }
     
     let farm1 = new Mkulima();
-    farm1.addFarm("333","Naburi","Ashly","0758862979", "OA333");
-    farm1.addFarm("444","Natabona","Nandwa","0789895657", "JN444");
-    farm1.addFarm("555","Nagwera","Anota","0114660199", "SN555");
+    farm1.addFarm("63","Padiri","Humble","078867989", "BA63");
+    farm1.addFarm("74","Kalisa","Zikamwa","0787990543", "SN74");
+    farm1.addFarm("25","Tita","Jabiro","0114345678", "DP25");
     console.log(farm1.farms);
     
-    farm1.removeFarm("023");
+    farm1.removeFarm("74");
     console.log()
 
 
